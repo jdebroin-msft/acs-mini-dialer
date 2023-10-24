@@ -1,0 +1,21 @@
+{
+  "name": "calling-quickstart-voice",
+  "version": "1.0.0",
+  "source": "index.html",
+  "scripts": {
+      "start": "parcel",
+      "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/communication-calling": "^1.16.3",
+    "@azure/communication-common": "^2.2.1"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "process": "^0.11.10"
+  },
+  "description": ""
+}
