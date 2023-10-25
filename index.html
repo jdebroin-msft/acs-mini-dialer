@@ -9,12 +9,39 @@
     <button id="token-submit" type="button">
         Submit token
     </button>
-    <input 
-      id="callee-id-input"
-      type="text"
-      placeholder="Who would you like to call?"
-      style="margin-bottom:1em; width: 200px; display: block;"
-    />
+    <div style="display: flex; flex-direction: row; align-items: center;">
+      <div style="display: flex; flex-direction: column; align-items: right;">
+        <label for="acs-connection-string-input" style="display: flex; align-items: center; margin-bottom: 1em;">
+          ACS connection string:
+        </label>
+        <label for="acs-source-phone-number-input" style="display: flex; align-items: center; margin-bottom: 1em;">
+          ACS source phone number:
+        </label>
+        <label for="destination-phone-number-input" style="display: flex; align-items: center; margin-bottom: 1em;">
+          Destination phone number:
+        </label>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: left;">
+        <input 
+          id="acs-connection-string-input"
+          type="text"
+          placeholder="ACS connection string"
+          style="margin-bottom: 1em; width: 500px;"
+        />
+        <input 
+          id="acs-source-phone-number-input"
+          type="text"
+          placeholder="ACS source phone number"
+          style="margin-bottom: 1em; width: 500px;"
+        />
+        <input 
+          id="destination-phone-number-input"
+          type="text"
+          placeholder="Destination phone number"
+          style="margin-bottom: 1em; width: 500px;"
+        />
+      </div>
+    </div>
     <div>
       <button id="call-button" type="button" disabled="true">
         Start Call
