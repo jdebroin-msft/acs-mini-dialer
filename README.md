@@ -32,7 +32,7 @@ ACS_SUBSCRIPTION="Azure Communication Services"
 RG=nuance-test-rg
 ACS=nuance-test-acs
 
-az communication list-key --name $ACS --resource-group $RG --subscription "$ACS_SUBSCRIPTION")
+OUT=$(az communication list-key --name $ACS --resource-group $RG --subscription "$ACS_SUBSCRIPTION")
 
 ACS_CONNECTION_STRING=$(echo $OUT | jq -r '.primaryConnectionString')
 
